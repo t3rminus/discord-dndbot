@@ -1,0 +1,23 @@
+{
+  "name": "discord-dndbot",
+  "version": "1.0.0",
+  "description": "Bot for Discord to help with D&D ",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t3rminus/discord-dndbot.git"
+  },
+  "author": "Kevin S",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/t3rminus/discord-dndbot/issues"
+  },
+  "homepage": "https://github.com/t3rminus/discord-dndbot#readme",
+  "dependencies": {
+    "discord.io": "^2.5.1"
+  }
+}
