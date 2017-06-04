@@ -108,13 +108,15 @@ function rollCheck(message) {
 			}
 			if(dice.length === 1 && dice[0].count === 1 && dice[0].total === dice[0].max) {
 				resultMessage = 'Rolled 1d'+dice[0].max+': '+dice[0].total+'! CRITICAL HIT! :tada: :confetti_ball:';
+				resultMessage += '\n  '+dice[0].total+' with ' + ((die.add > 0) ? '+' : '-') + Math.abs(die.add) + ' = ' + (dice[0].total + dice[0].add);
 			}
 			if(dice.length === 1 && dice[0].count === 1 && dice[0].total === 1) {
 				resultMessage = 'Rolled 1d'+dice[0].max+': 1 ...critical failure :confounded:';
+				resultMessage += '\n  '+dice[0].total+' with ' + ((die.add > 0) ? '+' : '-') + Math.abs(die.add) + ' = ' + (dice[0].total + dice[0].add);
 			}
 			return resultMessage;
 		} else {
-			return 'Whoops! I didnt\'t understand that roll';
+			return 'Whoops! I didnt\'t understand that roll.';
 		}
 	}
 }
