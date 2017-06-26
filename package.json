@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Bot for Discord to help with D&D ",
   "main": "main.js",
+  "engines": {
+    "node": "^6.11.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node main.js"
@@ -18,6 +21,12 @@
   },
   "homepage": "https://github.com/t3rminus/discord-dndbot#readme",
   "dependencies": {
-    "discord.io": "^2.5.1"
-  }
+    "bluebird": "^3.5.0",
+    "cheerio": "^1.0.0-rc.1",
+    "discord.js": "^11.1.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "upndown": "^2.1.0"
+  },
+  "devDependencies": {}
 }
