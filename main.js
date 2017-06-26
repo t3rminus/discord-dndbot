@@ -16,6 +16,13 @@ if(!String.prototype.capitalize) {
 
 bot.on('ready', function() {
 	console.log('Logged in as %s - %s\n', bot.user.username, bot.user.id);
+	bot.user.setAvatar('./d20.png')
+		.then(() => {
+			console.log('Updated avatar');
+		})
+		.catch((err) => {
+			console.log('Error updating avatar',err);
+		});
 });
 
 bot.on('message', function(message) {
