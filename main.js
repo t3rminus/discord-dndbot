@@ -19,7 +19,7 @@ bot.on('ready', function() {
 });
 
 bot.on('message', function(message) {
-	if(message.content.indexOf('?roll')) {
+	if(message.content.indexOf('?roll') === 0) {
 		message.reply(rollCheck(message.content));
 	}
 	
